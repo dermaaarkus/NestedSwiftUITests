@@ -8,11 +8,11 @@ final class ProfileViewModel: ObservableObject {
 
     let configurationModelViewModel: ConfigurationModuleViewModel
 
-    let model1ViewModel = ModuleViewModel(identifier: "1")
-    let model2ViewModel = ModuleViewModel(identifier: "2")
-    let model3ViewModel = ModuleViewModel(identifier: "3")
+    private(set) lazy var model1ViewModel = ModuleViewModel(identifier: "1")
+    private(set) lazy var model2ViewModel = ModuleViewModel(identifier: "2")
+    private(set) lazy var model3ViewModel = ModuleViewModel(identifier: "3")
 
-    let splitViewModel = SplitModuleViewModel()
+    private(set) lazy var splitViewModel = SplitModuleViewModel()
 
     private var cancellables = Set<AnyCancellable>()
 
