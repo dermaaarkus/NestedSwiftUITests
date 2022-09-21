@@ -14,9 +14,9 @@ struct SplitModuleView: View {
 
     var body: some View {
         HStack {
-            SimpleCounterView(title: "Count A")
+            SimpleCounterView(title: viewModel.simpleTitle)
 
-            SimpleCounterView(title: "Count B")
+            UnidirectionalCounterView(viewModel: viewModel.unidirectionalCounterViewModel)
         }
         .padding()
         .background(Color.lightRandom())
@@ -24,7 +24,9 @@ struct SplitModuleView: View {
 }
 
 struct SplitModuleView_Previews: PreviewProvider {
+    private static var viewModel = SplitModuleViewModel()
+
     static var previews: some View {
-        SplitModuleView(viewModel: SplitModuleViewModel())
+        SplitModuleView(viewModel: viewModel)
     }
 }

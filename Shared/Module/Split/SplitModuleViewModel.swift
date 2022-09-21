@@ -8,5 +8,9 @@
 import Foundation
 
 final class SplitModuleViewModel: ObservableObject {
-    
+
+    let simpleTitle = "Simple Count"
+    let complexTitle = "Complex Count"
+
+    private(set) lazy var unidirectionalCounterViewModel = UnidirectionalCounterViewModel(title: complexTitle)
 }

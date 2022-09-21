@@ -10,6 +10,9 @@
 		E6825AB928DAFDC000BA31E6 /* SplitModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6825AB828DAFDC000BA31E6 /* SplitModuleView.swift */; };
 		E6825ABC28DAFE1000BA31E6 /* SplitModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6825ABB28DAFE1000BA31E6 /* SplitModuleViewModel.swift */; };
 		E6825ABF28DAFF1C00BA31E6 /* SimpleCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6825ABE28DAFF1C00BA31E6 /* SimpleCounterView.swift */; };
+		E6825AC428DB024200BA31E6 /* UnidirectionalCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6825AC328DB024200BA31E6 /* UnidirectionalCounterView.swift */; };
+		E6825AC628DB025E00BA31E6 /* UnidirectionalCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6825AC528DB025E00BA31E6 /* UnidirectionalCounterViewModel.swift */; };
+		E6825AC828DB067C00BA31E6 /* UnidirectionalCounterDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6825AC728DB067C00BA31E6 /* UnidirectionalCounterDisplayModel.swift */; };
 		E6B56E9328D89A9A001DCA60 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B56E9228D89A9A001DCA60 /* Tests_iOS.swift */; };
 		E6B56E9528D89A9A001DCA60 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B56E9428D89A9A001DCA60 /* Tests_iOSLaunchTests.swift */; };
 		E6B56EA228D89A9A001DCA60 /* NestedSwiftUITestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B56E7A28D89A98001DCA60 /* NestedSwiftUITestsApp.swift */; };
@@ -43,6 +46,9 @@
 		E6825AB828DAFDC000BA31E6 /* SplitModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitModuleView.swift; sourceTree = "<group>"; };
 		E6825ABB28DAFE1000BA31E6 /* SplitModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitModuleViewModel.swift; sourceTree = "<group>"; };
 		E6825ABE28DAFF1C00BA31E6 /* SimpleCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCounterView.swift; sourceTree = "<group>"; };
+		E6825AC328DB024200BA31E6 /* UnidirectionalCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidirectionalCounterView.swift; sourceTree = "<group>"; };
+		E6825AC528DB025E00BA31E6 /* UnidirectionalCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidirectionalCounterViewModel.swift; sourceTree = "<group>"; };
+		E6825AC728DB067C00BA31E6 /* UnidirectionalCounterDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidirectionalCounterDisplayModel.swift; sourceTree = "<group>"; };
 		E6B56E7A28D89A98001DCA60 /* NestedSwiftUITestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedSwiftUITestsApp.swift; sourceTree = "<group>"; };
 		E6B56E7B28D89A98001DCA60 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E6B56E7C28D89A9A001DCA60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				E6825ABE28DAFF1C00BA31E6 /* SimpleCounterView.swift */,
+				E6825AC328DB024200BA31E6 /* UnidirectionalCounterView.swift */,
+				E6825AC528DB025E00BA31E6 /* UnidirectionalCounterViewModel.swift */,
+				E6825AC728DB067C00BA31E6 /* UnidirectionalCounterDisplayModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6B5790A28D9F8A5001DCA60 /* ModuleDisplayModel.swift in Sources */,
+				E6825AC428DB024200BA31E6 /* UnidirectionalCounterView.swift in Sources */,
 				E6825AB928DAFDC000BA31E6 /* SplitModuleView.swift in Sources */,
 				E6B5791028D9FAD9001DCA60 /* ConfigurationDisplayModel.swift in Sources */,
 				E6825ABC28DAFE1000BA31E6 /* SplitModuleViewModel.swift in Sources */,
@@ -309,6 +319,8 @@
 				E6B578FE28D9E929001DCA60 /* ConfigurationModuleViewModel.swift in Sources */,
 				E6B56EA428D89A9A001DCA60 /* ProfileView.swift in Sources */,
 				E6B578F728D9E779001DCA60 /* ConfigurationModuleView.swift in Sources */,
+				E6825AC828DB067C00BA31E6 /* UnidirectionalCounterDisplayModel.swift in Sources */,
+				E6825AC628DB025E00BA31E6 /* UnidirectionalCounterViewModel.swift in Sources */,
 				E6B56EB728D89AD3001DCA60 /* ModuleView.swift in Sources */,
 				E6B5790428D9F880001DCA60 /* ProfileDisplayModel.swift in Sources */,
 				E6B56EA228D89A9A001DCA60 /* NestedSwiftUITestsApp.swift in Sources */,
