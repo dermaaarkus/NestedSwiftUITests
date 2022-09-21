@@ -13,10 +13,14 @@ struct SplitModuleView: View {
     @ObservedObject var viewModel: SplitModuleViewModel
 
     var body: some View {
-        HStack {
-            SimpleCounterView(title: viewModel.simpleTitle)
+        VStack {
+            Text("Hit Count: \(viewModel.displayModel.hitCount)")
 
-            UnidirectionalCounterView(viewModel: viewModel.unidirectionalCounterViewModel)
+            HStack {
+                SimpleCounterView(title: viewModel.simpleTitle)
+
+                UnidirectionalCounterView(viewModel: viewModel.unidirectionalCounterViewModel)
+            }
         }
         .padding()
         .background(Color.lightRandom())

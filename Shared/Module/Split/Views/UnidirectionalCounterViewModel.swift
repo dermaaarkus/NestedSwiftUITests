@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import Combine
 
 final class UnidirectionalCounterViewModel: ObservableObject {
 
     @Published var displayModel: UnidirectionalCounterDisplayModel
+
+    let interactionPublisher = PassthroughSubject<UnidirectionalCounterInteraction, Never>()
 
     private let title: String
     private var count: Int
@@ -22,11 +25,15 @@ final class UnidirectionalCounterViewModel: ObservableObject {
 
     func increase() {
         count += 1
+        interactionPublisher.send(.hit)
+
         updateDisplayModel()
     }
 
     func decrease() {
         count -= 1
+        interactionPublisher.send(.hit)
+
         updateDisplayModel()
     }
 
