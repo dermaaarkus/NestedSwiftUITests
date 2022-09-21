@@ -45,6 +45,8 @@ struct ProfileView: View {
                     ModuleView(viewModel: viewModel.model3ViewModel)
                 }
 
+                SplitModuleView(viewModel: viewModel.splitViewModel)
+
                 if displayModel.showOtherModules {
                     ModuleView(viewModel: ModuleViewModel(identifier: "other"))
 

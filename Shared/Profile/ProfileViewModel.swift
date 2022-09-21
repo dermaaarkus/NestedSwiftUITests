@@ -12,6 +12,8 @@ final class ProfileViewModel: ObservableObject {
     let model2ViewModel = ModuleViewModel(identifier: "2")
     let model3ViewModel = ModuleViewModel(identifier: "3")
 
+    let splitViewModel = SplitModuleViewModel()
+
     private var cancellables = Set<AnyCancellable>()
 
     init() {
